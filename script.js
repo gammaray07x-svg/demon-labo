@@ -25,7 +25,7 @@ const AUTOBACKUP_KEY = SAVE_KEY + "_autoBackup";
 
 const DECAY_INTERVAL_MS = 20 * 60 * 1000;
 const ZERO_DEATH_MS = 2 * 60 * 60 * 1000;
-const TEST_MODE = true;
+const TEST_MODE = false;
 const EVENT_LOG_LIMIT = 30;
 const LIFE_HISTORY_LIMIT = 50;
 const RANDOM_EVENT_MIN_MS = 90 * 60 * 1000;
