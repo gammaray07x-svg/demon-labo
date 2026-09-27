@@ -32,7 +32,7 @@ const RANDOM_EVENT_MIN_MS = 90 * 60 * 1000;
 const RANDOM_EVENT_MAX_MS = 180 * 60 * 1000;
 const MAX_RARE_CARRY = 1;
 const GAME_TITLE = "DEMON LABO";
-const GAME_VERSION = "3.43.0-RC92-life-cycle-17h15m";
+const GAME_VERSION = "3.44.0-RC93-sleep-button-fix";
 const ZOMBIE_PHASE_DURATION_SECONDS = 12 * 60 * 60;
 const ZOMBIE_DECAY_INTERVAL_MS = 30 * 60 * 1000;
 const OPERATOR_THUNDER_LOCK_MS = 60 * 60 * 1000;
@@ -1715,7 +1715,7 @@ function recoverEnergy(amount) {
     return false;
   }
 
-  recoverEnergy(value);
+  energy = clamp(energy + value);
   return true;
 }
 
