@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMON LABO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <main class="game">
+
+    <div class="stage-name" id="stageName">
+      赤ちゃん
+    </div>
+
+    <div class="growth-info">
+      <div id="currentStageText">
+        現在：赤ちゃん
+      </div>
+
+      <div id="nextStageText">
+        次の成長まで：30秒
+      </div>
+    </div>
+
+    <div class="stats">
+
+      <div class="stat">
+        <div class="stat-top">
+          <span>🍚 満腹度</span>
+          <strong id="hunger">80</strong>
+        </div>
+
+        <div class="bar">
+          <div
+            class="bar-fill"
+            id="hungerBar">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="stat">
+        <div class="stat-top">
+          <span>⚡ 体力</span>
+          <strong id="energy">80</strong>
+        </div>
+
+        <div class="bar">
+          <div
+            class="bar-fill"
+            id="energyBar">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="stat">
+        <div class="stat-top">
+          <span>😊 機嫌</span>
+          <strong id="mood">80</strong>
+        </div>
+
+        <div class="bar">
+          <div
+            class="bar-fill"
+            id="moodBar">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="stat">
+        <div class="stat-top">
+          <span>🛁 清潔度</span>
+          <strong id="clean">80</strong>
+        </div>
+
+        <div class="bar">
+          <div
+            class="bar-fill"
+            id="cleanBar">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="character">
+
+      <img
+        id="characterImage"
+        src="https://i.ibb.co/HRjKm7m/1-E849-DE3-91-D3E-CD2-A7-C2-51-BF767773-F9.png"
+        alt="赤ちゃん"
+      >
+
+    </div>
+
+
+    <div class="buttons">
+
+      <button id="feed">
+        🍚 ごはん
+      </button>
+
+      <button id="play">
+        🎮 遊ぶ
+      </button>
+
+      <button id="sleep">
+        💤 寝る
+      </button>
+
+      <button id="bath">
+        🛁 風呂
+      </button>
+
+    </div>
+
+
+    <button
+      id="restart"
+      class="restart">
+      🔄 最初から育てる
+    </button>
+
+  </main>
+
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
